@@ -1,0 +1,196 @@
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root {
+    --bg-color: #151421;
+    --color-primary0: #212032;
+    --color-primary1: #6d57f2;
+    --color-primary2: #4165ee;
+    --font-color: #fff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
+/* SEÇÃO PERFIL */
+.perfil {
+    & h2 {
+        text-align: center;
+        font-size: 14pt;
+        font-weight: 600;
+        margin: 15px 0px;
+    }
+
+    .caixa {
+        background-color: var(--color-primary0);
+        padding: 12px 8px;
+        margin: 15px;
+
+        border-radius: 12px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    & .conteiner-values {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 13px;
+    }
+
+    & .conteiner-values p {
+        font-size: 11pt;
+        color: #535178;
+    }
+
+    & .conteiner-values i {
+        font-size: 13pt;
+        margin-right: 13px;
+    }
+
+    & .conteiner-values .bi-caret-up-fill {
+        color: green;
+    }
+
+    & .conteiner-values .bi-caret-down-fill {
+        color: red;
+    }
+
+    & .conteiner-values span {
+        font-size: 13pt;
+    }
+}
+
+.input-add {
+    padding: 12px 8px;
+    margin: 15px;
+    background-color: var(--color-primary0);
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & input,
+    button {
+        border: none;
+        color: #fff;
+    }
+
+    & .valueAndBtn {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    & #client,
+    #value,
+    #obs {
+        background-color: var(--bg-color);
+        height: 30px;
+        padding: 12px;
+        border-radius: 50px;
+    }
+
+
+    & #client {
+        width: 90%;
+    }
+
+    & #value {
+        width: 30%;
+    }
+
+    & .content-3 {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        gap: 15px;
+        width: 100%;
+    }
+
+    & #obs {
+        width: 90%;
+        height: 50p
+        
+        & .bi{
+            font-size: 16pt;
+        }
+
+        & button{
+            background-color: transparent;
+        }
+
+        & .bi-coin{
+            color: #279b27;
+            cursor: pointer;
+        }
+        
+        & .bi-dash-circle-fill{
+            color: rgb(230, 48, 48);
+            cursor: pointer;
+        }x;
+    }
+
+    & #button {
+        background-color: var(--color-primary1);
+        padding: 5px 12px;
+        font-size: 16pt;
+        cursor: pointer;
+        border-radius: 50px;
+        width: 12%;
+        height: 50px;
+    }
+}
+
+.list-tasks {
+    padding: 12px 8px;
+    margin: 15px;
+    background-color: var(--color-primary0);
+    border-radius: 12px;
+
+    & li{
+        border-top: 2px solid #53517851;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 18px 8px;
+
+        & .clientName{
+            text-align: left;
+            width: 250px;
+        }
+
+        & .number{
+            width: 60px;
+        }
+
+        & .icons{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        
+    }
+}
+.PG {
+    border: 2px solid #32bc32;
+    border-radius: 50px;
+    padding: 3px 10px;
+    /* display: none; */
+}
