@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     font-family: "Poppins", sans-serif;
     margin: 0;
@@ -7,7 +8,7 @@
     outline: none;
 }
 
-button{
+button {
     background-color: transparent;
     border: none;
 }
@@ -25,201 +26,188 @@ body {
     color: var(--font-color);
 }
 
+/* Section Styles */
 .section-painel {
     background-color: var(--color-primary0);
     border: 2px solid #302e48;
     border-radius: 15px;
-
     margin: 15px;
     padding: 12px 8px;
-
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
 
-    & .box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 13px;
-    }
+.section-painel .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+}
 
-    & span {
-        display: flex;
-        align-items: center;
-        gap: 13px;
+.section-painel span {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
 
-        & .bi {
-            font-size: 13pt;
-        }
+.section-painel .bi {
+    font-size: 13pt;
+}
 
-        & .bi-caret-up-fill {
-            color: green;
-        }
+.section-painel .bi-caret-up-fill {
+    color: green;
+}
 
-        & .bi-caret-down-fill {
-            color: red;
-        }
-    }
+.section-painel .bi-caret-down-fill {
+    color: red;
+}
 
-    & .filter-container {
-        width: 100%;
+.section-painel .filter-container {
+    width: 100%;
+}
 
-        & #filterInput {
-            background-color: var(--color-primary0);
-            color: var(--font-color);
-            border: 2px solid #302e48;
-            border-radius: 50px;
-
-            padding: 8px 15px;
-            width: 100%;
-        }
-    }
+.section-painel .filter-container #filterInput {
+    background-color: var(--color-primary0);
+    color: var(--font-color);
+    border: 2px solid #302e48;
+    border-radius: 50px;
+    padding: 8px 15px;
+    width: 100%;
 }
 
 .section-add-datas {
     background-color: var(--color-primary0);
     border: 2px solid #302e48;
     border-radius: 15px;
-
     margin: 15px;
     padding: 12px 8px;
+}
 
-    & .nameClient {
-        background-color: var(--color-primary0);
-        color: var(--font-color);
-        border: 2px solid #302e48;
-        border-radius: 50px;
+.section-add-datas .nameClient {
+    background-color: var(--color-primary0);
+    color: var(--font-color);
+    border: 2px solid #302e48;
+    border-radius: 50px;
+    padding: 8px 15px;
+    width: 70%;
+}
 
-        padding: 8px 15px;
-        width: 70%;
-    }
+.section-add-datas .purchaseValue {
+    background-color: var(--color-primary0);
+    color: var(--font-color);
+    border: 2px solid #302e48;
+    border-radius: 50px;
+    padding: 8px 15px;
+    width: 25%;
+}
 
-    & .purchaseValue {
-        background-color: var(--color-primary0);
-        color: var(--font-color);
-        border: 2px solid #302e48;
-        border-radius: 50px;
+.section-add-datas .buttons-add {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
 
-        padding: 8px 15px;
-        width: 25%;
-    }
+.section-add-datas .buttons-add button {
+    background-color: transparent;
+    border: none;
+}
 
-    & .buttons-add {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+.section-add-datas .buttons-add i {
+    color: var(--font-color);
+    border-radius: 100px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 12pt;
+    font-style: normal;
+}
 
-        margin: 20px 0px;
+.section-add-datas .btn-pay i {
+    background-color: #279b27;
+    margin-right: 10px;
+}
 
-        & button {
-            background-color: transparent;
-            border: none;
-        }
+.section-add-datas .btn-pay i:active {
+    background-color: #279b27ee;
+}
 
-        & i {
-            color: var(--font-color);
-            border-radius: 100px;
-            padding: 10px;
-            cursor: pointer;
+.section-add-datas .btn-debt i {
+    background-color: #e6bf30;
+}
 
-            font-size: 12pt;
-            font-style: normal;
+.section-add-datas .btn-debt i:active {
+    background-color: #e6bf30ee;
+}
 
-        }
+.section-add-datas .btn-submit {
+    background-color: var(--color-primary1);
+    color: var(--font-color);
+    padding: 8px 13px;
+    border-radius: 8px;
+    cursor: pointer;
+}
 
-        & .btn-pay i {
-            background-color: #279b27;
-            margin-right: 10px;
-        }
-
-        & .btn-pay i:active {
-            background-color: #279b27ee;
-        }
-
-        & .btn-debt i {
-            background-color: #e6bf30;
-        }
-
-        & .btn-debt i:active {
-            background-color: #e6bf30ee;
-        }
-
-        & .btn-submit {
-            background-color: var(--color-primary1);
-            color: var(--font-color);
-            padding: 8px 13px;
-            border-radius: 8px;
-            cursor: pointer;
-        }
-
-        & .btn-submit:active {
-            background-color: #6e57f2ee;
-        }
-
-    }
+.section-add-datas .btn-submit:active {
+    background-color: #6e57f2ee;
 }
 
 .sheet {
-    /* background-color: var(--color-primary0); */
-    /* border: 2px solid #302e48; */
     border-radius: 15px;
-
     margin: 15px;
     padding: 12px 8px;
-    
-    & li {
-        border-top: 2px solid #53517851;
-        padding: 10px;
-        
-
-        & .nameStatus {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 8px;
-
-            & p {
-                font-size: 18pt;
-                font-weight: 600;
-            }
-
-            & .pay {
-                border: 2px solid #279b27;
-                border-radius: 50px;
-                padding: 3px 13px;
-                font-size: 10pt;
-            }
-
-            & .debt {
-                border: 2px solid #e6bf30;
-                border-radius: 50px;
-                padding: 3px 13px;
-                font-size: 10pt;
-            }
-        }
-
-        & .price {
-            font-size: 13pt;
-            font-weight: 600;
-            color: var(--color-primary1);
-        }
-
-        & .check {
-            background-color: transparent;
-            color: var(--font-color);
-            font-size: 18pt;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-
-            position: relative;
-            left: 90%;
-        }
-    }
 }
 
+.sheet li {
+    border-top: 2px solid #53517851;
+    padding: 10px;
+}
+
+.sheet .nameStatus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.sheet .nameStatus p {
+    font-size: 18pt;
+    font-weight: 600;
+}
+
+.sheet .nameStatus .pay {
+    border: 2px solid #279b27;
+    border-radius: 50px;
+    padding: 3px 13px;
+    font-size: 10pt;
+}
+
+.sheet .nameStatus .debt {
+    border: 2px solid #e6bf30;
+    border-radius: 50px;
+    padding: 3px 13px;
+    font-size: 10pt;
+}
+
+.sheet .price {
+    font-size: 13pt;
+    font-weight: 600;
+    color: var(--color-primary1);
+}
+
+.sheet .check {
+    background-color: transparent;
+    color: var(--font-color);
+    font-size: 18pt;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    left: 90%;
+}
+
+/* Additional Classes */
 .pay {
     border: 2px solid #279b27;
     border-radius: 50px;
@@ -234,39 +222,38 @@ body {
     font-size: 10pt;
 }
 
-/* =========================== */
+/* Hidden Items */
 #itemList li.hidden {
     display: none;
 }
 
-
-footer{
+/* Footer Styles */
+footer {
     background-color: var(--color-primary1);
     color: #212032;
     font-size: 12pt;
     font-weight: 600;
     width: 100vw;
     height: 30px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     position: fixed;
     top: 96%;
-
-    & span{
-        color: var(--font-color);
-    }
 }
 
+footer span {
+    color: var(--font-color);
+}
+
+/* Media Queries */
 @media screen and (min-width: 960px) {
-    main{
+    main {
         width: 1150px;
         margin: auto;
     }
 
-    footer{
+    footer {
         margin: 0;
     }
 }
