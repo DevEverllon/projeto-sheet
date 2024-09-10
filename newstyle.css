@@ -7,6 +7,11 @@
     outline: none;
 }
 
+button{
+    background-color: transparent;
+    border: none;
+}
+
 :root {
     --bg-color: #151421;
     --color-primary0: #212032;
